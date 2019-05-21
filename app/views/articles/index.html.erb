@@ -1,10 +1,9 @@
   <ul>
     <% @articles.each do |article| %>
     <li class="card">
-      <h1><%= link_to article.title, article_path(article) %></h1>
+      <h2><%= link_to article.title, article_path(article) %></h2>
       <%= article.content %>
-      <%= link_to 'Edit', edit_article_path(article) %>
-      <%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you super sure?'} %>
+      <%= link_to 'Edit', edit_article_path(article) %><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you super sure?'} %>
     </li>
     <% end %>
   </ul>

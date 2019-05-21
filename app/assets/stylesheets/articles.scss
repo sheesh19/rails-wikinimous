@@ -2,6 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+form {
+  display: grid;
+  padding: 16px;
+}
+
+form input {
+  margin: 16px 16px;
+}
+
 .navbar a {
   text-decoration: none;
   color: white;
@@ -10,23 +33,20 @@
 .navbar a:hover {
   text-decoration: none;
   color: lightgrey;
-  transition-duration: 0.5s
-}
-
-li {
-  text-decoration: none;
-  list-style: none;
+  transition-duration: 0.5s;
 }
 
 .container {
   text-align: center;
-
+  width: 60vw;
 }
 
 .card {
   margin: 16px;
+  text-decoration: none;
 }
 
 .card, p {
   margin: 16px;
 }
+
